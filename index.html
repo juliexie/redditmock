@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+	<header class="grayheader">
+
+		<div class="mysubreddits">
+			<a href="#">MY SUBREDDITS</a>
+		</div>
+	
+		<div class="navpart1">
+			<ul>
+				<li>
+					<a class="front" href="http://www.reddit.com">FRONT</a>
+					<span class="separator">-</span>
+				</li>
+				<li>
+					<a class="all" href="http://www.reddit.com/r/all">ALL</a>
+					<span class="separator">-</span>
+				</li>
+				<li>
+					<a class="all" id="spacer" href="http://www.reddit.com/r/JustStemThings/">RANDOM</a>
+				</li>
+			</ul>
+		</div>
+
+	
+		<div class="navpart2">
+			<ul>
+				<li>
+					<a class="choice" href="http://www.reddit.com/r/worldnews/">WORLDNEWS</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/books/">BOOKS</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/Art/">ART</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/photoshopbattles/">PHOTOSHOPBATTLES</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+
+					<a class="choice" href="http://www.reddit.com/r/explainlikeimfive/">EXPLAINLIKEIMFIVE</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/aww/">AWW</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/space/">SPACE</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/news/">NEWS</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/Jokes/">JOKES</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/gifs/">GIFS</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/Fitness/">FITNESS</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/science/">SCIENCE</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/food/">FOOD</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/videos/">VIDEOS</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/Documentaries/">DOCUMENTARIES</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/TwoXChromosomes/">TWOXCHROMOSOMES</a>
+				</li>
+				<li>
+					<span class="separator">-</span>
+					<a class="choice" href="http://www.reddit.com/r/DIY/">DIY</a>
+				</li>
+				
+			</ul>
+		</div>
+	</header>
+
+	<nav class="bluenav">
+		<img src="http://b.thumbs.redditmedia.com/qkxaWE2yAzPf__YQgAAkOBuOzOPvfPWW1NAZN5vVY6M.png" width="120" height="40">
+
+		<ul class="trendinglinks">
+			<li> 
+				<a class="bluenavchoice" id="selected" href="http://www.reddit.com/">hot</a>
+			</li>
+			<li>
+				<a class="bluenavchoice" href="http://www.reddit.com/new/">new</a>
+			</li>
+			<li>
+				<a class="bluenavchoice" href="http://www.reddit.com/rising/">rising</a>
+			</li>
+			<li>
+				<a class="bluenavchoice" href="http://www.reddit.com/controversial/">controversial</a>
+			</li>
+			<li>
+				<a class="bluenavchoice" href="http://www.reddit.com/top/">top</a>
+			</li>
+			<li>
+				<a class="bluenavchoice" href="http://www.reddit.com/gilded/">gilded</a>
+			</li>
+			<li>
+				<a class="bluenavchoice" href="http://www.reddit.com/wiki/">wiki</a>
+			</li>
+			<li>
+				<a class="bluenavchoice" href="http://www.reddit.com/ads/">promoted</a>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="container clearfix">
+
+	<div class="side">
+		<div class="sidesearch">
+			
+			<i class="fa fa-search"></i>
+			<form action="http://www.reddit.com/search" id="search" role="search">
+				<input type="text" name="q" placeholder="search" tabindex="20">		
+			</form>
+		</div>
+
+		<div class="login">
+			<form method="post" action="https://www.reddit.com/post/login" id="login_login-main" class="login-form login-form-side">
+				<input type="hidden" value="login-main" name="op">
+				<input type="text" tabindex="1" maxlength="20" placeholder="username" name="user">
+				<input type="password" tabindex="1" placeholder="password" name="passwd">
+				<div class="status"></div>
+				
+				<div class="container clearfix">
+				<div id="remember-me">
+					<input id="rem-login-main" type="checkbox" tabindex="1" name="rem">
+					<label for="rem-login-main">remember me</label>
+					<a class="recover-password" hsref="/password">reset password</a>
+				</div>
+				<div class="submit">
+					<span class="throbber"></span>
+					<button class="btn" tabindex="1" type="submit">login</button>
+				</div>
+				</div>
+				<div class="clear"></div>
+			</form>
+		</div>
+
+	<div class="sidebarlinks">
+		<a class="sidebar_link" href="">Submit a new link</a>
+    	<a class="sidebar_link" href="">Submit a new text post</a>
+    	<a class="sidebar_link" href="">Create your own subreddit</a>
+    </div>
+
+	</div>
+
+
+	<div class='entryspace'>
+
+		<div class="entry" id="sponsored">
+		
+		<div class="rankvotesponsored">
+			<!-- <span class="rank">1</span> -->
+			<div class="fa fa-arrow-up"></div>
+			<div class="numbersponsored">1</div>
+			<div class="fa fa-arrow-down"></div>			
+		</div>	
+
+		<img class="imagesponsored" src="redditimage2.png">
+
+		<div class="entrytext">
+			<p class="title">
+				<a href="http://imgur.com/7e5BdTR">Game Doth Recognize Game. Read the first 7 chapters of A CROWN FOR COLD SILVER by Alex Marshall.</a> 
+				<span class="domain">(<a href="http://pixel.redditmedia.com/click?url=http%3A%2F%2Fwww.crimsonempire.net%2F&hash=a9ce9563b85f350360d86ae13e756626d761ace0&id=t3_2xd0qz-t8_lf0e">m.imgur.com</a>)</span>
+
+			</p>
+			
+			<p class="tagline">submitted
+				<time class="live-timestamp" datetime="2015-02-23T19:34:16+00:00" title="Mon Feb 23 19:34:16 2015 UTC">6 hours ago</time>
+				by
+				<a class="author may-blank id-t2_hio7j" href="http://www.reddit.com/user/LimbuPani">LimbuPani</a>
+				<span class="userattrs"></span>
+				to
+				<a class="subreddit hover may-blank" href="http://www.reddit.com/r/pics/">/r/pics</a>
+			</p>
+
+			<ul class="flatlistbuttons">
+				<li class="first">
+					<a href="http://www.reddit.com/r/funny/comments/2wwss1/some_people_just_want_to_watch_the_world_burn/" class="comments">108 comments</a>
+				</li>
+				<li class="share">
+					<a href="#">Share</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+
+
+
+		<div class="entry">
+		
+		<div class="rank">1</div>
+		<div class="rankvote">
+			<div class="fa fa-arrow-up"></div>
+			<div class="number">6880</div>
+			<div class="fa fa-arrow-down"></div>			
+		</div>	
+
+		<img src="redditimage.png">
+
+		<div class="entrytext">
+			<p class="title">
+				<a href="http://imgur.com/7e5BdTR">Some people just want to watch the world burn.</a> 
+				<span class="domain">(<a href="http://domain/m.imgur.com">m.imgur.com</a>)</span>
+
+			</p>
+			
+			<p class="tagline">submitted
+				<time class="live-timestamp" datetime="2015-02-23T19:34:16+00:00" title="Mon Feb 23 19:34:16 2015 UTC">6 hours ago</time>
+				by
+				<a class="author may-blank id-t2_hio7j" href="http://www.reddit.com/user/LimbuPani">LimbuPani</a>
+				<span class="userattrs"></span>
+				to
+				<a class="subreddit hover may-blank" href="http://www.reddit.com/r/pics/">/r/pics</a>
+			</p>
+
+			<ul class="flatlistbuttons">
+				<li class="first">
+					<a href="http://www.reddit.com/r/funny/comments/2wwss1/some_people_just_want_to_watch_the_world_burn/" class="comments">108 comments</a>
+				</li>
+				<li class="share">
+					<a href="#">Share</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+
+		<div class="entry">
+		
+		<div class="rank">2</div>
+		<div class="rankvote">
+			<div class="fa fa-arrow-up"></div>
+			<div class="number">92</div>
+			<div class="fa fa-arrow-down"></div>			
+		</div>	
+
+		<img src="redditimage.png">
+
+		<div class="entrytext">
+			<p class="title">
+				<a href="http://i.imgur.com/2ouwQ3r.gif">Ping pong snuff out</a> 
+				<span class="domain">(<a href="http://domain/m.imgur.com">m.imgur.com</a>)</span>
+
+			</p>
+			
+			<p class="tagline">submitted
+				<time class="live-timestamp" datetime="2015-02-23T19:34:16+00:00" title="Mon Feb 23 19:34:16 2015 UTC">6 hours ago</time>
+				by
+				<a class="author may-blank id-t2_hio7j" href="http://www.reddit.com/user/RespectMyAuthoriteh">RespectMyAuthoriteh</a>
+				<span class="userattrs"></span>
+				to
+				<a class="subreddit hover may-blank" href="http://www.reddit.com/r/gifs/">/r/gifs</a>
+			</p>
+
+			<ul class="flatlistbuttons">
+				<li class="first">
+					<a href="http://www.reddit.com/r/gifs/comments/2wwrk9/ping_pong_snuff_out/" class="comments">302 comments</a>
+				</li>
+				<li class="share">
+					<a href="#">Share</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+
+		<div class="entry">
+		<div class="rank">3</div>
+
+		<div class="rankvote">
+			<div class="fa fa-arrow-up"></div>
+			<div class="number">1180</div>
+			<div id="bluechange" class="fa fa-arrow-down"></div>			
+		</div>	
+
+		<img src="redditimage.png">
+
+		<div class="entrytext">
+			<p class="title">
+				<a href="http://www.nbcnews.com/politics/white-house/obama-vetoes-keystone-xl-pipeline-bill-n311671">Obama Vetoes Keystone XL Bill.</a> 
+				<span class="domain">(<a href="http://www.reddit.com/domain/nbcnews.com/">nbcnews.com</a>)</span>
+
+			</p>
+			
+			<p class="tagline">submitted
+				<time class="live-timestamp" datetime="2015-02-23T19:34:16+00:00" title="Mon Feb 23 19:34:16 2015 UTC">6 hours ago</time>
+				by
+				<a class="author may-blank id-t2_hio7j" href="http://www.reddit.com/user/Fernmelder">Fernmelder</a>
+				<span class="userattrs"></span>
+				to
+				<a class="subreddit hover may-blank" href="http://www.reddit.com/r/news/">/r/news</a>
+			</p>
+
+			<ul class="flatlistbuttons">
+				<li class="first">	
+					<a href="http://www.reddit.com/r/news/comments/2x122x/obama_vetoes_keystone_xl_pipeline_bill/" class="comments">3058 comments</a>
+				</li>
+				<li class="share">
+					<a href="#">Share</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+
+	</div>
+
+
+
+	
+	</div> 
+
+
+
+
+	</div>
+
+	</div>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/index.js"></script>
+
+</body>
